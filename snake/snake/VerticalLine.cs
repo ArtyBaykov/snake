@@ -4,17 +4,16 @@ using System.Text;
 
 namespace snake
 {
-    class HorisontalLine : Figure
+    class VerticalLine : Figure
     {
-        public HorisontalLine(int xRight, int xLeft, int y, char sym)
+        public VerticalLine(int yUp, int yDown, int x, char sym)
         {
             pList = new List<Point>();
-            for(int x = xRight; x <= xLeft; x++)
+            for(int y = yUp; y <= yDown; y++)
             {
                 Point p = new Point(x, y, sym);
                 pList.Add(p);
             }
-
         }
     }
 }
