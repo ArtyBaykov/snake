@@ -33,6 +33,10 @@ namespace snake
             Update(p1);
             Console.WriteLine("Call Move. p1.x = " + p1.x + ", p1.y = " + p1.y);
 
+            p1 = new Point(1, 3, '*');
+            Reset(p1);
+            Console.WriteLine("Call Move. p1.x = " + p1.x + ", p1.y = " + p1.y);
+
             Console.ReadLine();
         }
 
@@ -58,6 +62,11 @@ namespace snake
         }
 
         public static void Update(Point p)
+        {
+            p = new Point();
+        }
+
+        public static void Reset(Point p)
         {
             p = new Point();
         }
